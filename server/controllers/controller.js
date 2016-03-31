@@ -48,7 +48,7 @@
         } else {
           console.log('log record saved to db', req.body);
         }
-        sendXML(res, !_.isEmpty(message));
+        sendXML(res);
       });
     } catch (e) {
       console.log('Could not save db record', e);
